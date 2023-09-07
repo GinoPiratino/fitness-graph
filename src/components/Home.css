@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 750px;
+  height: 520px;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0px 10px 50px 41px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.second-container {
+  padding: 30px;
+}
+
+.summary {
+  color: black;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 20px;
+  padding-bottom: 3px;
+}
+
+.purple-part {
+  width: 375px;
+  height: 520px;
+  background: linear-gradient(to bottom, #6744ff 0%, #352aed 100%);
+  border-radius: 50px;
+}
+
+.white-part {
+  width: 375px;
+  height: 520px;
+  background-color: white;
+  border-radius: 50px;
+  font-weight: 800;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+}
+
+.text-aligned {
+  color: hsl(241, 100%, 89%);
+  font-size: 20px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.circle {
+  width: 180px;
+  height: 180px;
+  background: rgb(74, 33, 203);
+  background: linear-gradient(to top, #4c22cb00 0%, #4c22cb 100%);
+  justify-content: center;
+  display: flex;
+  border-radius: 100px;
+  align-items: center;
+}
+
+.results-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.circle-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.text-aligner {
+  text-align: center;
+}
+
+.big-number {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  color: white;
+}
+.little-number {
+  color: hsl(241, 83%, 84%);
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+}
+.gj {
+  margin-top: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+  font-family: "Hanken Grotesk", sans-serif;
+  text-align: center;
+}
+.paragraph {
+  margin-top: 20px;
+  font-size: 18px;
+  color: hsl(241, 83%, 84%);
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container-result {
+  margin-top: 15px;
+  width: 310px;
+  height: 70px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.red {
+  background: #fff6f5;
+}
+
+.yellow {
+  background: #fffbf2;
+}
+
+.blue {
+  background: #f2fbfa;
+}
+
+.green {
+  background: #f2fbfa;
+}
+
+.icon {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.power-name1 {
+  font-family: "Hanken Grotesk", sans-serif;
+  color: hsl(0, 100%, 67%);
+}
+.power-name2 {
+  font-family: "Hanken Grotesk", sans-serif;
+  color: hsl(39, 100%, 56%);
+}
+.power-name3 {
+  font-family: "Hanken Grotesk", sans-serif;
+  color: hsl(166, 100%, 37%);
+}
+.power-name4 {
+  font-family: "Hanken Grotesk", sans-serif;
+  color: hsl(234, 85%, 45%);
+}
+.half-container {
+  width: 155px;
+  height: 70px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex: 1;
+}
+.half-container2 {
+  width: 155px;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+.testo-colorato {
+  margin-right: 20px;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: lightgray;
+}
+.testo-colorato-ciccione {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+}
+
+.bottone-blu {
+  font-family: "Hanken Grotesk", sans-serif;
+  width: 100%;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #6744ff 0%, #352aed 100%);
+  color: white;
+  transition: all 0.3s ease 0s, box-shadow 0.2s ease, transform-origin 0.2s ease;
+  padding: 15px;
+}
+
+.bottone-blu:hover {
+  background: linear-gradient(to bottom, white 0%, white 100%);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid #5f3ffc;
+  color: #5f3ffc;
+}
+
+.bottone-blu:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 755px) {
+  .container {
+    flex-direction: column;
+    align-items: center; /* Cambia da align-items: column; a align-items: center; */
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%; /* Imposta l'altezza su auto */
+  }
+  .purple-part {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: auto; /* Imposta l'altezza su auto */
+    background-size: cover;
+  }
+}
